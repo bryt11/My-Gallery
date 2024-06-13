@@ -1,0 +1,59 @@
+.col-sm-6 {
+  margin: 300px;
+  height: 100%;
+}
+h1.text-center {
+  font-family: "Proxima Nova";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.slider {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  border: none;
+}
+
+p a {
+  text-decoration: none;
+}
+
+.or-text {
+  color: grey;
+}
+
+.text-to-red {
+  color: red;
+}
+
+.text-center-gallery-class {
+  text-align: center;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 450px) {
+  .col-sm-6 {
+    margin: 20px;
+  }
+}
