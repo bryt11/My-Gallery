@@ -3,7 +3,7 @@
 <?php include "../includes/header.php" ?>
 
 <?php
-
+session_start();
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -28,6 +28,7 @@ if (isset($_POST['login'])) {
     if ($username !== $db_username && $password !== $db_password) {
         header("Location: login_user.php");
     } else if ($username === $db_username && $password === $db_password) {
+        $_SESSION['username'] = $username;
         header("Location: loggedin_user.php");
     } else {
         echo "Username or password is wrong";
